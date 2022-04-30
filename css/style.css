@@ -256,7 +256,7 @@ h1,h2,h3,h4,p{
             color: var(--address-color);
              text-decoration: none;
             }
-            .footer-page{
+            .footer-title{
                 font-weight: 700;
                
                 line-height: 1.142;
@@ -310,6 +310,62 @@ h1,h2,h3,h4,p{
                 
                 
             }
+
+
+
+
+            /* newsletter */
+.newsletter{
+    margin-left: 93px;
+}            
+.newsletter-title{
+    display: block;
+
+}
+.newsletter-email{
+    padding: 15px 16px;
+    
+    width: 346px;
+
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+    background-color: rgba(0, 0, 0, 0);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6)
+    }
+    .newsletter-email::placeholder{
+        font-size: 16px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.6)
+    }
+.newsletter-button{
+    position: relative;
+    padding: 10px 62px 10px 29px;
+    margin-left: 12px;
+    cursor: pointer;
+    color: var(--white-color);
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+   
+    }
+    .button-icon{
+        position: absolute;
+        top: 13px;
+        right: 28px;
+  
+    }
+    
              
 
 
@@ -417,8 +473,88 @@ h1,h2,h3,h4,p{
                 border-radius: 4px;
                 padding: 15px;
                 transition: transform 250ms var(--cubic) ;
+                padding-left: 40px;
+                padding-right: 40px;
 
             } 
+            /* form */
+            .page-form{
+                font-size: 20px;
+                line-height: 23px;
+                color: var(--black-main);
+                margin-bottom: 12px;
+                margin-top: 25px;
+            }
+
+            .lable-form{
+                
+                display: block;
+                margin-bottom: 4px;
+                font-size: 12px;
+                line-height: 14px;
+                
+
+                letter-spacing: 0.01em;
+            }
+            .form-input{
+                display: block;
+                width: 100%;
+                
+                margin-bottom: 10px;
+                border: 1px solid rgba(33, 33, 33, 0.2);
+                border-radius: 4px;
+                padding: 12px 42px;
+                transition: border 250ms var(--cubic);
+            }
+            
+            .form-input:focus{
+                 outline: none;
+                border: 1px solid #2196F3;
+                
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+                }
+
+            .coment-form{
+                width: 100%;
+                height: 120px;
+                resize: none;
+                padding: 12px 16px;
+                margin-bottom: 20px;
+            }
+            .form-link{
+                color: var(--blue-main);
+            }
+            .form-button{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+                padding: 10px 55px ;
+
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 1.875;
+                letter-spacing: 0.06em;
+                
+                color: var(--white-color);
+                background-color: var(--blue-main);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                border-radius: 4px;
+
+                transition: background-color 250ms var(--cubic);
+            }
+            .form-button:hover{
+                background-color: #188CE8 ;
+            }
+
+
+
+
+
+
+
             
             .backdrop.is-hidden{
                 pointer-events: none;
@@ -427,11 +563,9 @@ h1,h2,h3,h4,p{
             .backdrop.is-hidden .modal{
                 transform: translate(-50%,-50%) scale(0.1);
             }
-            .icon-close{
-                width: 11px;
-                height: 11px;                               
-            }
+            
             .button-close{
+                
                 position: absolute;
                 right: 8px;
                 top: 8px;
@@ -440,9 +574,88 @@ h1,h2,h3,h4,p{
                 border-radius: 50%;
                 width: 30px;
                 height: 30px;
-                cursor: pointer;}
+                cursor: pointer;
+                }
                 
+                .button-close:hover {
+                    color: var(--blue-main);
+                }
+                .icon-close{    
+                    width: 11px;
+                    height: 11px; 
 
+                    fill:  currentColor;
+                    transition: fill 250ms var(--cubic);     }
+
+
+              /* FORM ICON */
+              .tumb-input{
+                  position: relative;
+              }
+              .tumb-icon{
+                  color: var(--black-main) ;
+                  transition: color 250ms var(--cubic);
+                  
+              }
+              
+              .form-icon{
+                  
+                 position: absolute;
+                  top: 50%;
+                  left: 12px;
+                  width: 18px;
+                  height: 18px;
+                  fill: currentColor;
+                 
+                 }
+              
+            .form-input:focus + .tumb-icon{
+                color: var(--blue-main);
+
+                 }
+                 
+                 .checkbox-back{
+                     position: absolute;
+                     top: 50%;
+                     left:  17px;
+                     transform: translateY(-50%);
+                    
+                     background-color: white;
+                     width: 16px;
+                     height: 15px;
+                     position: absolute;
+                     border: solid 2px black;
+                     border-radius: 3px;
+                    
+                     
+                 }
+                 .checkbox{
+                     position: relative;
+                     padding-left: 37px;
+                 }
+
+
+                 .checkbox-icon{
+                     display: inline-block;
+                     position: absolute;
+                    
+                    
+                   
+                     width: 16px;
+                     height: 15px;
+                     
+                     
+                 }
+                 .checkbox-check:checked + .checkbox-back{
+                     background-color: #188CE8;
+                      border-color: transparent;
+                     border-radius: 3px;
+                     background-image: url('../images/mark.svg');
+                     background-size: contain;
+                     background-repeat: no-repeat;
+                 }
+                
+                
             
         
             /* SECTION 1 END */
