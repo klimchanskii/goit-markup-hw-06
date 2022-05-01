@@ -233,11 +233,13 @@
     </ul>
     </div>
     <div class="newsletter">
+        <form >
         <label class="footer-title newsletter-title" for="newsletter">Подпишитесь на рассылку</label>
-        <input class="newsletter-email" type="email" name="email" id="newsletter" placeholder="E-mail">
+        <input class="newsletter-email" type="email" name="email" id="newsletter" placeholder="E-mail"
+        required>
         <button class="newsletter-button" type="submit">Подписаться <span class="button-icon" >
             <svg width="24px" height="24px"><use href="./images/icons.svg#icon-icon-send"></use></svg></span></button>
-
+    </form>
     </div>
 
     </div></div>
@@ -246,15 +248,17 @@
     <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <h2 class="page-form">Оставьте свои данные, мы вам перезвоним</h2>
-                    <form action="">
+                    <form >
                         <div class="tumb-input">
                         <label class="lable-form" for="user-name">Имя</label>
-                        <input class="form-input"  type="text" name="user-name" id="user-name" >
+                        <input class="form-input"  type="text" name="user-name" id="user-name" 
+                        required>
                         <span class="tumb-icon"><svg class="form-icon"><use href="./images/icons.svg#icon-form-person"></use></svg></span>
                         </div>
                         <div class="tumb-input">
                         <label class="lable-form" for="user-tel">Телефон</label>
-                        <input class="form-input" type="tel" name="user-tel" id="user-tel">
+                        <input class="form-input" type="tel" name="user-tel" id="user-tel"
+                        required>
                         <span class="tumb-icon"> <svg class="form-icon"><use href="./images/icons.svg#icon-form-phone"></use></svg></span>
                         </div>
                         <div class="tumb-input">
@@ -267,7 +271,8 @@
 
                          
                          <label class="checkbox" > 
-                             <input class="checkbox-check visually-hidden" type="checkbox" name="rule" >
+                             <input class="checkbox-check visually-hidden" type="checkbox" name="rule" 
+                             required>
                              <span class="checkbox-back"></span>
                              Соглашаюсь с рассылкой и принимаю <a class="form-link" href="">Условия договора</a></label>
 
